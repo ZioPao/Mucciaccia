@@ -173,4 +173,6 @@ int main() {
     game.game_loop();
     game.get_winner();
 
+    return 0;   //fottiti marco
+
 }
