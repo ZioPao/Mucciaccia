@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(pail
         library.cpp
-        library.h)
+        library.h character.cpp character.h game.cpp game.h)

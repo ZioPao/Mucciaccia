@@ -10,6 +10,7 @@
 
 #define NUM_OBJECTS 4
 #define MAX_PENIS 25
+#define MAX_HP 100
 
 ///Frasi per le fights
 #define PRE_PHRASE1 "Il pene di "
@@ -21,6 +22,14 @@
 
 enum Objects{COLLA,FORBICI,CARTA,MALATTIE};
 enum Condition{WIN, LOSE, TIE};
+
+//Carta di giornata vince contro le malattie, Malattie vince contro tutti, forbici vince contro carta
+
+//COLLA VS FORBICI =
+//COLLA VS CARTA
+//COLLA VS MALATTIE =
+
+
 
 
 int main();
