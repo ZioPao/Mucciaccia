@@ -11,7 +11,7 @@ using namespace std;
         int hp;             //per tutti i combattimenti
         int force;          //forza per gli oggetti
         int precision;      //precisione da usare nei combattimenti con gli oggetti
-        int penis;        //todo magari evita float che se no non potranno mai combattere con gli oggetti
+        int penis;         //todo necessario finire combattimenti con oggetti per evitare che ci siano più vincitori
         Objects object;
 
         //Int che servono nel caso di combattimenti con oggetti
@@ -32,13 +32,14 @@ using namespace std;
 
             this->object = static_cast<Objects>(random() % NUM_OBJECTS);
             this->force = (int) random() % MAX_HP;
+            this->precision=(int)random()%50;           //todo rivedi
 
             ///todo fai switch case per tutti i vari oggetti
             switch (this->get_object()) {
                 case COLLA:
                     //glue_quant = (int) random() % 100;
                     glue_quant = 100;
-                    glue_pressure = (glue_quant*precision)/2;
+                    glue_pressure = (glue_quant*precision)/2;   //todo rivedi
                     break;
                 case FORBICI:
                     break;
