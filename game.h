@@ -1,7 +1,3 @@
-//
-// Created by aless on 08/03/2019.
-//
-
 #ifndef PAIL_GAME_H
 #define PAIL_GAME_H
 
@@ -12,7 +8,7 @@ class Game{
 
 private:
     int dim = 0;                    //numero dei characters, da definire dopo
-    vector<character> characters;
+    vector<Character> characters;
 
 public:
 

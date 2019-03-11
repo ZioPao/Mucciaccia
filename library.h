@@ -12,6 +12,9 @@
 #define MAX_PENIS 25
 #define MAX_HP 100
 
+#define OGGETTI true
+#define PENI false
+
 ///Frasi per le fights
 #define PRE_PHRASE1 "Il pene di "
 #define PRE_PHRASE2 "L'enorme fallo di "

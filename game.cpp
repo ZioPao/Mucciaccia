@@ -24,8 +24,7 @@ void Game::game_loop(){
                         break;
                     case TIE:
                         //todo combattimento con oggetti
-                        characters[i].set_status(LOSE);
-                        characters[j].set_status(LOSE);
+                        characters[i].fight_with_obj(characters[j]);        //ricorsione all'interno nel caso servisse
                         break;
                 }
             }
